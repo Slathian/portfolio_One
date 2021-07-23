@@ -7,6 +7,8 @@ import "../styles/main.scss";
 
 import thumb from '../images/thumb_image.png';
 
+import Weather from '../components/weatherWidget';
+
 const Home = () => {
 
     const state = useSelector(state => state.count);
@@ -36,6 +38,10 @@ const Home = () => {
                     Decrement
                 </button>
             </div>
+        </div>
+
+        <div className="weather">
+            <Weather />
         </div>
 
     </div>
